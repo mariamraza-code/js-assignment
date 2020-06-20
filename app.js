@@ -424,3 +424,416 @@ else{
 //No alert message appeared.
 
 
+
+
+  var a=4;
+    if (++a === 5)
+        {
+            alert("Given condition for variable a is true. ");
+        }
+    var b=82;
+    if (b++ === 83)
+       {
+            alert("Given condition for variable b is true. ");
+        }
+    var c=12;
+    if (a++ === 13)
+        {
+            alert("condition 1 is true.");
+        }
+    if (c === 13)
+        {
+            alert("condition 2 is true.  ");
+        }
+    if (++c === 14)
+        {
+            alert("condition 3 is true.  ");
+        }
+    if (c === 14)
+        {
+            alert("condition 4 is true.");
+        }
+    var materialCost=20000;
+    var laborCost=2000;
+    var totalCost=materialCost+laborCost;
+    if (totalCost === laborCost+materialCost)
+        {
+            alert("The cost equals. ");
+        }
+    if (true){
+        alert("True <br>");
+    }
+    if (false){ alert("False");}
+    if ("car" < "cat"){
+        alert("car is smaller than cat");
+    }
+}
+///
+    var obtainedMarks = [2];
+    var totalMarks = [2];
+    var i=0,a;
+    var sumOfTotalMarks=0, sumOfObtainedMarks=0, percentage=0, grade, remarks;
+
+    for (i=0; i <=2; i++){
+        totalMarks[i]= prompt("Enter total marks of subject " + (i+1));
+       
+
+        sumOfTotalMarks += parseInt(totalMarks[i]);
+    }
+
+    for (i=0; i <=2; i++){
+        obtainedMarks[i]= prompt("Enter obtained marks of subject " + (i+1));
+     
+
+        sumOfObtainedMarks += parseInt(obtainedMarks[i]);
+
+    percentage=sumOfObtainedMarks/sumOfTotalMarks*100.0
+
+    if (percentage>=80){
+        grade="A-One";
+        remarks="Excellant"
+    }
+    else if (percentage>=70 && percentage <= 79.99){
+        grade="A";
+        remarks="Good"
+    }
+    else if (percentage>=60 && percentage <= 69.99){
+        grade="B";
+        remarks="You need to improve"
+    }
+    else {
+        grade="Fail";
+        remarks="Sorry"
+    }
+    document.write("<h1> Marks Sheet </h1> <br> <br>")
+    document.write("Total Marks: " + sumOfTotalMarks);
+    document.write("<br> Mark Obtained: " + sumOfObtainedMarks);
+    document.write("<br> Percentage: " + percentage);
+    document.write("<br> Grade: " + grade);
+    document.write("<br> Remarks: " + remarks);
+
+
+//
+    var actualNumber=5;
+    var userNumber;
+    userNumber=prompt("Enter secret number! ");
+    if (actualNumber === userNumber){
+        document.write("Bingo! Correct answer.")
+    }
+    else if (actualNumber === userNumber+1) {
+        document.write("Close enough to the correct answer")
+    }
+    else{document.write("Sorry next time!"+actualNumber + " " + userNumber)}
+}
+function divisible3Check(){
+    var userInput;
+    userInput=prompt("Enter any number!")
+    if (userInput % 3 === 0){
+        document.write("<h1> The number " + userInput + " is Divisible by 3 </h1>");
+    }
+    else { document.write("<h1> The number " + userInput + " is not divisible by 3 </h1>");}
+//
+
+    var a=Number(prompt("Enter First number:"));
+    var b = Number(prompt("Enter 2nd number:"));
+    var op= prompt("Enter operator for operation?");
+    var c=0;
+    if (op === '+')
+        {
+            document.write(a + op + b + "=" + (a+b));
+        }
+    else if (op === '-')
+    {
+        document.write(a + op + b + "=" + (a-b));
+    }
+    else if (op === '*')
+    {
+        document.write(a + op + b + "=" + (a*b));
+    }
+    else if (op === '/')
+    {
+        document.write(a + op + b + "=" + (a/b));
+    }
+    else if (op === '%')
+    {
+        document.write(a + op + b + "=" + (a%b));
+    }
+    else { alert("Illegal operation");
+         }
+
+//
+
+    var userInput;
+    userInput=prompt("Enter any number!")
+    if (userInput % 2 === 0){
+        document.write("<h1> Even number </h1>");
+    }
+    else { document.write("<h1> Odd number </h1>");}
+
+//
+    var userTemperature;
+    userTemperature=prompt("Enter Temperature!")
+    if (userTemperature > 40){
+        document.write("<h1> It is too hot outside. </h1>");
+    }
+    else if (userTemperature >=30 && userTemperature < 40){
+         document.write("<h1> The Weather today is Normal </h1>");
+        }
+    else if (userTemperature >=20 && userTemperature < 30){
+        document.write("<h1> Today's Weather is cool </h1>");
+        }
+    else{
+        document.write("<h1> OMG! Today's weather is so cool </h1>");
+        
+
+
+//
+
+    var valueInput=prompt("Enter any character");
+    var asciCode= valueInput.charCodeAt(0);
+    // document.write("ASCI code is: " + valueInput.charCodeAt(0))
+    if (asciCode >=45 && asciCode<=57)
+        {
+            document.write("You enter a digit");
+        }
+    else if (asciCode >=65 && asciCode<=90)
+        {
+            document.write("You enter a capital letter");
+        }
+    else if (asciCode >=97 && asciCode<=122)
+        {
+            document.write("You enter a small letter");
+        }
+    else 
+        {
+            document.write("You enter a special character");
+        }
+//
+    var firstNumber=prompt("Enter 1st number");
+    var scondNumber=prompt("Enter 2nd number");
+
+    if (firstNumber === scondNumber)
+        {
+            document.write("Both digits are equal.");
+        }
+    else if (firstNumber > scondNumber)
+        {
+            document.write("First Number is larger i.e. " + firstNumber);
+        }
+    else 
+        {
+            document.write("Second number is larger i.e. "+ scondNumber);
+        }
+
+//
+    var firstNumber=prompt("Enter any number");
+
+    if (firstNumber < 0)
+        {
+            document.write("You entered Negative number. ");
+        }
+    else if (firstNumber > 0)
+        {
+            document.write("You entered Positive number. ");
+        }
+    else 
+        {
+            document.write("You entered Zero.");                
+        }
+//
+
+    var valueInput=prompt("Enter any character");
+    var asciCode= valueInput.charCodeAt(0);
+ 
+    if (asciCode === 65 || asciCode === 69 || asciCode === 73 || asciCode === 79 || asciCode === 85 
+        || asciCode === 97 || asciCode === 101 || asciCode === 105 || asciCode === 111 || asciCode === 117 )
+        {
+            document.write("Yes! you enter a Vowel Character.");
+        }
+    else 
+        {
+            document.write("No. You enter other Character");
+        }
+
+//
+    var validPassword="abc123";
+    var inputPassword=prompt("Enter password:");
+    if (inputPassword == null)
+        {
+            document.write("Please enter your password");            
+        }
+    else if (inputPassword !== validPassword)
+        {
+            document.write("Incorrect password");
+        }
+    else
+        {
+            document.write("Correct! The password you entered matches the original password");
+        }
+
+
+//
+    var greeting;
+    var hour =13;
+    
+    if (hour <18){
+        greeting="Good Day";
+        document.write(greeting);
+    }
+    else {
+        greeting="Good Evening"
+        document.write(greeting);
+    }
+
+//
+    var timeInput=prompt("Enter time in 24 hours clock format!");
+    if (timeInput >= 0000 && timeInput < 1200)
+        {
+            document.write("Good morning!");
+        }
+    else if (timeInput >= 1200 && timeInput < 1700)
+        {
+            document.write("Good afternoon!");
+        }
+    else if (timeInput >= 1700 && timeInput < 2100)
+    {
+        document.write("Good evening!");
+    }
+    else if (timeInput >= 2100 && timeInput <= 2359)
+    {
+        document.write("Good night!");
+    }
+    else 
+    {
+        document.write("Your enter wrong time.")
+    }
+
+
+/////////-------------- Chapter No.14 to 16
+function task1to6(){
+    var empty = [];
+    var myObject = new Array();
+    var province = ["Sindh", "Punjab", "KPK", "Balochistan"];
+    var stdAge = new Array(15,17,18);
+    var boolean = [0, 1, 1, 0];
+    var mixed = [1, "Punjab", 2, "Balochistan"];
+
+document.write("var empty = []; <br> var myObject = new Array(); <br> var province = [" + "Sindh," +"Punjab,"+ "KPK," +"Balochistan]; <br>  var stdAge = new Array(15,17,18); <br> var boolean = [0, 1, 1, 0]; <br> var mixed = [1," + "Punjab, 2,"+ "Balochistan];")
+
+}
+//
+    var qualifications =["SSC", "HSC", "BCS","BS","BCOM","MS","M.Phil.","PhD"];
+    document.write("<h1> Qualifications: </h1>");
+    for (let i=0; i<qualifications.length; i++)
+        {
+            document.write((i+1)+") " + qualifications[i] + "<br>");
+        }
+
+//
+
+    var names =["Michael", "John", "Tony"];
+    var marks = [320, 230, 480];
+    var totalMarks=500;
+    
+    for (let i=0; i<3; i++)
+        {
+            // document.write((i+1)+") " + names[i] + "<br>");
+            document.write("<h2> Score of "+ names[i] + " is "+ marks[i]+ ". Percentage: "+marks[i]/totalMarks*100 +"% <br> </h2>");
+            // document.write("<br>")
+        }
+//
+
+    var colors =["White", "Red", "Black"];
+    var newColor;
+    var newIdex;
+
+    document.write("<h2> Actual Array.</h2> <br>")
+    for (let i=0; i<colors.length; i++)
+        {
+            document.write((i+1)+") " + colors[i] + "<br>");
+        }
+    newColor=prompt("Enter new color to add at the begenning!");
+    colors.unshift(newColor);
+    document.write("<h2> a.Added new color at the beginning.</h2> <br>")
+    for (let i=0; i<colors.length; i++)
+    {
+        document.write((i+1)+") " + colors[i] + "<br>");
+    }
+
+    newColor=prompt("Enter new color to add at the end!");
+    colors.push(newColor);
+    document.write("<h2> b.Added new color at the end.</h2> <br>")
+    for (let i=0; i<colors.length; i++)
+    {
+        document.write((i+1)+") " + colors[i] + "<br>");
+    }
+
+    colors.unshift("Brown", "Yellow");
+    document.write("<h2> c.Added two more new color at the beginning.</h2> <br>")
+    for (let i=0; i<colors.length; i++)
+    {
+        document.write((i+1)+") " + colors[i] + "<br>");
+    }
+    colors.shift();
+    document.write("<h2> d.First Color Deleted ...</h2> <br>")
+    for (let i=0; i<colors.length; i++)
+    {
+        document.write((i+1)+") " + colors[i] + "<br>");
+    }
+
+    colors.pop();
+    document.write("<h2> e.Last color Deleted ...</h2> <br>")
+    for (let i=0; i<colors.length; i++)
+    {
+        document.write((i+1)+") " + colors[i] + "<br>");
+    }
+    newIdex=prompt("Enter index to add new color!");
+    newColor=prompt("Enter new color to add at given index!");
+    // colors[newIdex]=newColor;
+    colors.splice(newIdex,0,newColor)
+
+    document.write("<h2> f.Array after adding new color at mentioned index  ...</h2> <br>")
+    for (let i=0; i<colors.length; i++)
+    {
+        document.write((i+1)+") " + colors[i] + "<br>");
+    }
+
+    newIdex=prompt("Enter index to delete color(s) from Array!");
+    let indexLimit=prompt("Enter index limit that how many you want to delete!");
+    
+    colors.splice(newIdex,indexLimit);
+
+    document.write("<h2> g.Array after deleting color at mentioned index  ...</h2> <br>")
+    for (let i=0; i<colors.length; i++)
+    {
+        document.write((i+1)+") " + colors[i] + "<br>");
+    }
+
+//
+    var student=[320, 230, 480, 120];
+    document.write("<h2> Scores of Students:" + student +"<br>");
+
+    student.sort();
+    document.write("Scores of Students:" + student + "</h2>");
+
+//
+    var cities=["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+    var selectedCities=[];
+    selectedCities.push(cities[2],cities[3]);
+
+    document.write("<h2>Cities list:<br>");
+    document.write (cities);
+    document.write("<br> <br>");
+    document.write("<h2>Selected cities list:<br>");
+    document.write (selectedCities);
+       
+//
+    var arr=["This", "is", "my", "cat"];
+    var joinArr=arr.join(" ");
+    document.write("<h1>Array:<br>");
+    document.write (arr);
+    document.write("<br> <br>");
+    document.write("String:<br>");
+    document.write (joinArr);
+
+
